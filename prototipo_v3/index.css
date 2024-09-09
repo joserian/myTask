@@ -41,6 +41,7 @@ html {
 
 .title-collum-container {
     display: flex;
+    align-items: center;
     margin-top: 15px;
     
 }
@@ -84,10 +85,15 @@ html {
 .cards-area {
     margin-top: 12px;
     height: 85%;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     scrollbar-color: #4f2991 #361374;
     scrollbar-width: thin;
+    border-radius: 7px;
+}
+
+.dragover {
+    background-color: #361374;
 }
 
 .card {
@@ -96,11 +102,11 @@ html {
     box-shadow: 0px 0px 3px black;
 
     height: max-content;
-    margin: 3px;
+    margin: 3px 3px 5px 3px;
     border-radius: 5px;
 
     .description-card {
-        padding: 5px;  
+        padding: 8px;  
         font-weight: bold;     
     }
 }
